@@ -1,4 +1,4 @@
-[#](#) Cache Poisoning
+[#](#) Web Cache Poisoning
 
 Get the cached key
 
@@ -43,9 +43,18 @@ Get the cached key
 5. X-Cache: miss
 
 1. /AAAA/..%2fmy-account
-2. Find folder that are cached (/resources, /assets, /static
+2. Find folder that are cached (/resources, /assets, /static)
 3. /resources/..%2fmy-account
 4. X-Cache: miss
+
+1. /my-account%23AAAA
+2. /AAAA/..%2fmy-account
+3. Find folder that are cached (/resources, /assets, /static)
+4. /AAAA/..%2fresources/labs.css
+5. 404 Cache: Miss
+6. /resources/..%2fLabs.css
+7. 404 (no cache -> cache decode ..%2f)
+8. /my-account%23%2f%2e%2e%2fresources (%23 is used for delimiter)
 
 Web Cache Delimiter List: 
 
