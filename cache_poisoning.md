@@ -1,4 +1,4 @@
-#Cache Poisoning
+[#Cache](#Cache) Poisoning
 
 Get the cached key
 
@@ -43,9 +43,10 @@ Get the cached key
 
 Web Cache Delimiter List: 
 
-(turn off intruder encoding)
-(browsers URL-encode characters like {, }, <, and >, and use # to truncate the path. If the cache or origin server decodes these characters)
+`(turn off intruder encoding)`
+`(browsers URL-encode characters like {, }, <, and >, and use # to truncate the path. If the cache or origin server decodes these characters)`
 
+```
 !
 "
 #
@@ -110,3 +111,4 @@ _
 %7C
 %7D
 %7E
+```
