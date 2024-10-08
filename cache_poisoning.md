@@ -1,4 +1,4 @@
-[#Cache](#Cache) Poisoning
+# Cache Poisoning
 
 Get the cached key
 
@@ -10,7 +10,7 @@ Get the cached key
     - string from a GET params or cookie (-> escape the string and XSS)
     - host from x-headers-type (-> redirect to exploit server)
 
-###Detecting Cache Response:
+### Detecting Cache Response:
 
 * X-Cache
     * X-Cache: miss -> missed the cache (request sent to web server directly)
@@ -23,18 +23,18 @@ Get the cached key
 
 * Response time might also indicate caching
 
-###Param Miner:
+### Param Miner:
 
 - Guess query params: some query params are excluded from cached key
 - Guess everything!
 
-###Payloads Cache Poisoning (OPTIONS, HEAD, GET)
+### Payloads Cache Poisoning (OPTIONS, HEAD, GET)
 
 * Pragma: x-get-cache-key
 * /?cb=AAAA&utm_content=BBBBB
 * /js/geolocate.js?callback=setCountryCookie&utm_content=foo;callback=arbitraryFunction
 
-###Payloads Cache Deception (OPTIONS, HEAD, GET)
+### Payloads Cache Deception (OPTIONS, HEAD, GET)
 
 1. /profile
 2. /profileAAAA
@@ -44,7 +44,9 @@ Get the cached key
 Web Cache Delimiter List: 
 
 `(turn off intruder encoding)`
+
 `(browsers URL-encode characters like {, }, <, and >, and use # to truncate the path. If the cache or origin server decodes these characters)`
+
 
 ```
 !
