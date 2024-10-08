@@ -1,4 +1,4 @@
-# Cache Poisoning
+[#](#) Cache Poisoning
 
 Get the cached key
 
@@ -113,4 +113,7 @@ _
 %7C
 %7D
 %7E
+%00
+%0A
+%09
 ```
