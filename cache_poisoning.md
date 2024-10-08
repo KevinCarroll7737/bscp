@@ -42,11 +42,15 @@ Get the cached key
 4. /profile;AAAA.css
 5. X-Cache: miss
 
+ 
+
 1. /AAAA/..%2fmy-account
 2. Find folder that are cached (/resources, /assets, /static)
 3. /resources/..%2fmy-account
 4. X-Cache: miss
 
+ 
+ 
 1. /my-account%23AAAA
 2. /AAAA/..%2fmy-account
 3. Find folder that are cached (/resources, /assets, /static)
