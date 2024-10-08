@@ -36,20 +36,22 @@ Get the cached key
 
 ### Payloads Cache Deception (OPTIONS, HEAD, GET)
 
+T1
+
 1. /profile
 2. /profileAAAA
 3. /profile;AAAA
 4. /profile;AAAA.css
 5. X-Cache: miss
 
- 
+T2 
 
 1. /AAAA/..%2fmy-account
 2. Find folder that are cached (/resources, /assets, /static)
 3. /resources/..%2fmy-account
 4. X-Cache: miss
 
- 
+T3 
  
 1. /my-account%23AAAA
 2. /AAAA/..%2fmy-account
