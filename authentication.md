@@ -28,6 +28,10 @@ Time based enumeration (add long password ;) )
 
 Can't bypass IP Filtering?
 
+    Is there an admin interface /admin
+    
+       Host: localhost
+       
     Fuzz no matter what, and grep negative for error?
 
 Change Password:
