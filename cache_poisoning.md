@@ -10,6 +10,9 @@ Get the cached key
     - string from a GET params or cookie (-> escape the string and XSS)
     - host from x-headers-type (-> redirect to exploit server)
 
+1. /not_existing%20<script>alert(1)</script>
+    - Client side encode "<", so can't share link, but can cache the XSS with repeater
+
 ### Detecting Cache Response:
 
 * X-Cache
