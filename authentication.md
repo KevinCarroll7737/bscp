@@ -32,6 +32,9 @@ Can't bypass IP Filtering?
     
        Host: localhost
        
+       TRACE /admin # And find Custom header
+       X-Custom-Ip-Authorization: 127.0.0.1
+       
     Fuzz no matter what, and grep negative for error?
 
 Change Password:
