@@ -42,3 +42,27 @@ Change Password:
     - POST Change Username?
     - POST username=wiener&current=peter&new_1=AAAA&new_2=BBBB
         - > New Passwords do not match > Bruteforce
+
+Drop request:
+
+    - Is there a unusual request that you can simply drop (instead of changing params) to not receive the new state (set-cookie)
+        - POST /login -> GET /role-selector (DROP)
+
+Stay-logged-in: 
+
+    - Can you decode the cookie
+    - Can you decrypt the cookie:
+        - Encryption Oracle -> POST /foo -> Set-Cookie: Notification=ENCRYPTED -> <html><header>My Super Notification: controlled_user_data</header><body>...
+            - Can you put the stay-logged-in cookie instead of controlled_user_data
+            - Create Encrypt / Decrypt Tabs
+            - Need to remove prefix
+            - Encrypted Data -> Decoder -> URL Decode -> Base64 -> Delete Bytes len("prefix")
+            - 16-bytes blocks error? -> how much to add so that we can safely remove the first block? -> 
+            ```
+            # When sending to encrypt, the backend add "prefix" and then encrypt....
+            ## prefixXXXXXXXXXX
+            block_1 = "X" * (16 - len("prefix")) # "prefix" will be automatically added
+            block_2 = "administrator:timestamp"
+            encrypt = block_1 + block_2```
+            # Encrypt and then remove first 16-bytes (hex in decoder and encode back)
+            print(encrypt)
