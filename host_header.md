@@ -1,4 +1,4 @@
-# Host Header
+[#](#) Host Header
 
 - Bypass Auth
 - Cache Poisoning
@@ -37,6 +37,15 @@
     GET /example HTTP/1.1
     Host: collab.burp # (intruder)
     
+    Send Group in Sequence (Single Connection)
+    Request 1:
+        GET / HTTP/1.1
+        Host: legit.com
+        Connection: keep-alive
+    Request 2: 
+        GET /admin HTTP/1.1
+        Host: 192.168.0.1
+        Connection: keep-alive
 
 Turbo Intruder:
 
