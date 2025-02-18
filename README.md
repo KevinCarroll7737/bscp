@@ -1,15 +1,10 @@
 [README](README)
 ===
 
-API Key:
+![image](https://github.com/user-attachments/assets/892af289-da9b-47c7-912e-224426fd6ff8)
 
-- Cache Poisoning
-- XSS
+Personnal notes for BSCP certification. 
 
-Reset Link:
-
-- X-Forwarded-Host (check logs)
-
-TBD:
-
-- X-Forwarded-For
+Usefule Links
+---
+https://github.com/Zoltan3422/portswigger-guide
