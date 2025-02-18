@@ -25,11 +25,11 @@
 
     GET /example HTTP/1.1
     Host: legit.com
-    X-Forwarded-Host: AAAA
-    X-Host: AAAA
-    X-Forwarded-Server: AAAA
-    X-HTTP-Host-Override: AAAA
-    Forwarded: AAAA
+X-Forwarded-Host: AAAA
+X-Host: AAAA
+X-Forwarded-Server: AAAA
+X-HTTP-Host-Override: AAAA
+Forwarded: AAAA
     
     GET /example HTTP/1.1
     Host: 192.168.0.1/24 # (intruder)

